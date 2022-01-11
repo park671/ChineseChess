@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/pvpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="玩家 vs 玩家"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/pveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="玩家 vs 电脑"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/eveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="电脑 vs 电脑"
+        android:textAllCaps="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/thinkDepthEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="思考深度" />
+
+        <EditText
+            android:id="@+id/thinkTimeEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="思考时间" />
+
+        <Button
+            android:id="@+id/customButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="设置AI难度"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+</LinearLayout>

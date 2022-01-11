@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFC58F"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Activity.GameActivity">
+
+    <TextView
+        android:textSize="@dimen/TitleTextSize"
+        android:id="@+id/GameModeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/WhoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="红 方"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:textStyle="italic|bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/SituationTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:padding="5dp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/LogTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:padding="5dp"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/AiProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+
+    <com.youngpark.simplechinesechess.View.GameView
+        android:id="@+id/GameView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/newRound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startNew"
+            android:text="开始新局" />
+
+        <Button
+            android:id="@+id/undoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="backUp"
+            android:text="悔棋" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="test"
+            android:text="test JNI"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</LinearLayout>
